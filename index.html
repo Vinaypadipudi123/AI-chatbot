@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindBot chatbot</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <!--header-->
+        <header class="app-header">
+            <h1 class="heading">Hello, there</h1>
+            <h2 class="sub-heading">How can I help you?</h2>
+        </header>
+
+        <!--Suggestions-->
+        <ul class="suggestions">
+            <li class="suggestions-item">
+                <p class="text">Help me to find out best IIT/NIT Universities in India</p>
+                <span class="material-symbols-rounded">draw</span>
+            </li>
+
+            <li class="suggestions-item">
+                <p class="text">Suggest me some unique projects on web development</p>
+                <span class="material-symbols-rounded">lightbulb</span>
+            </li>
+
+            <li class="suggestions-item">
+                <p class="text">Best places to explore in the World under 5 lakhs</p>
+                <span class="material-symbols-rounded">explore</span>
+            </li>
+        </ul>
+
+        <!--chats container-->
+        <div class="chats-container"></div>
+        
+
+        <!--prompt-->
+        <div class="prompt-container">
+            <form action="" method="GET" class="prompt-form" id="chatForm">
+                
+                <!-- text input only -->
+                <input type="text" name="message" class="prompt-input" placeholder="Ask Find.Bot">
+               
+
+                <div class="prompt-action">
+                    <!-- SEND only -->
+                    <button type="submit" id="send-prompt-btn" class="material-symbols-rounded">
+                        arrow_upward
+                    </button>
+                    
+                </div>
+            </form>
+            <!-- theme toggle -->
+            <button id="theme-toggle-btn" type="button" class="material-symbols-rounded">light_mode</button>
+             <!-- delete chats -->
+            <button id="delete-chats-btn" type="button" class="material-symbols-rounded">
+                delete
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
